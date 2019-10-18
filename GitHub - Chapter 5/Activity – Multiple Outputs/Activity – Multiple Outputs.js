@@ -3,18 +3,18 @@ var fs = require('fs');     //File System
 var http = require('http'); //http 
 
 //Create a file and assign it to stream
-var stream = fs.createWriteStream("Activity1.txt");
+var stream = fs.createWriteStream("Quarter 3 Sales Report.txt");
 
 //Write data to the file
   stream.write("The Web server is monitoring port 82\n");
   stream.write(Date.now() + "\n\n");
-  stream.write("Scintilate Scintilate globule vivific \n");
-  stream.write("Fain should I fathom your nature specific \n");
-  stream.write("Loftily poised in ether capacious\n");
-  stream.write("Stringly resembling some gem carbonacious \n\n");
-  stream.write("Something to think about :)\n\n");
-  stream.write("Did you notice the backslash n combination forces a new line?\n");
-  stream.write("Well done :)");
+  stream.write("Quarter 3 Sales Report  \n");
+  stream.write("----------------------  \n");
+  stream.write("Month     - Units Sold  \n");
+  stream.write("----------------------  \n");
+  stream.write("July      - 1000 \n");
+  stream.write("August    - 2000\n");
+  stream.write("September - 3000 \n");
 
   //Close the file
   stream.end();
@@ -28,7 +28,7 @@ http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'});
 
   //Send the response when a request is received
-  res.end('Twinkle twinkle little star, the world is at your feet - ' + Date.now());
+  res.end('Quarter 3 Sales Report file has been generated - ' + Date.now());
 
   //Closes off the bracketing for the server, instruct to listen on port 82
 }).listen(82);
