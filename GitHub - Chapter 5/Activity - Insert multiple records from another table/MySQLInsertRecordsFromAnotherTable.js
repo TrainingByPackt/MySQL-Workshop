@@ -14,7 +14,7 @@ var records = "SELECT `temp`.`Country Code`, `temp`.`Country Name`,`temp`.`Conti
 var sql = "INSERT INTO world_statistics.country (`Country Code`,`Country Name`,`ContinentID`)";
 
 //Combine the two SQL statements with a space between them
-sql = sql + " " + records 
+sql = sql + " " + records; 
 
 //Now we execute the SQL statement
 //The second parameter is the record object, it is in square brackets to indicate it is an array, albeit one dimension only
