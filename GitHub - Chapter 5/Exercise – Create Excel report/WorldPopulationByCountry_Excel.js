@@ -7,7 +7,7 @@ var mysqlconnection = require("./mysqlconnection.js");
 mysqlconnection.query("USE world_statistics");
 
 //Filter year
-var filteryear = "2018"
+var filteryear = "2018";
 
 //Setup the SQL statement
 var sql = ""
@@ -29,7 +29,7 @@ var sql = ""
     sql = sql + "countrypopulation.Year "
     sql = sql + "ORDER BY "
     sql = sql + "Continent_Region, "
-    sql = sql + "`Country_Population` DESC "
+    sql = sql + "`Country_Population` DESC ";
 
 //Run SQL
   mysqlconnection.query(sql,filteryear, function (err, countries) {
