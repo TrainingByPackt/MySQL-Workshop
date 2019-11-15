@@ -10,7 +10,7 @@ var mysqlconnection = require("./mysqlconnection.js");
 var sql = "INSERT INTO world_statistics.continents (continent) VALUES ?";
 
 //Create a record object, this is an array of data to insert into the table. We are creating a single dimension here
-var record = [['Asia'],['Europe'],['North America'],['Oceania'],['South America']];
+var record = [['Asia'],['Europe'],['North America'],['Oceania'],['South America'],['Antarctica']];
 
 
 //Now we execute the SQL statement
