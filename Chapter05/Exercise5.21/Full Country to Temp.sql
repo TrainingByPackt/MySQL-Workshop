@@ -32,7 +32,7 @@ ALTER TABLE country AUTO_INCREMENT = 1;
 ALTER TABLE country ADD COLUMN ContinentID INT(11) AFTER CountryID;
 
 ALTER TABLE `world_statistics`.`country` 
-ADD INDEX `ContinentID_idx` (`ContinentID` ASC) VISIBLE;
+ADD INDEX `ContinentID_idx` (`ContinentID` ASC);
 
 ALTER TABLE `world_statistics`.`country` 
 ADD CONSTRAINT `ContinentID`
