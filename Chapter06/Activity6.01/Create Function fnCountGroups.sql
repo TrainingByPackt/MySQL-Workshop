@@ -3,7 +3,7 @@ USE ms_access_migration;
 
 DROP FUNCTION IF EXISTS  `fnCountGroups`;
 
-delimiter //
+DELIMITER //
 
 CREATE FUNCTION `fnCountGroups`() RETURNS long
     READS SQL DATA
@@ -15,4 +15,4 @@ RETURN(TheValue);
 
 END//
 
-delimiter ;
+DELIMITER ;
