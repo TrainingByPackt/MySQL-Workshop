@@ -6,7 +6,7 @@ DROP FUNCTION IF EXISTS  `fnCountGroups`;
 delimiter //
 
 CREATE FUNCTION `fnCountGroups`() RETURNS long
-    DETERMINISTIC
+    READS SQL DATA
 BEGIN
 
 DECLARE TheValue Long;
