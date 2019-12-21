@@ -4,6 +4,8 @@
 connect_options="-S /tmp/mysql_sandbox8017.sock -u msandbox -pmsandbox"
 mysqlx_uri="root:msandbox@127.0.0.1:18017"
 
+shopt -s nullglob
+
 for f in ch*.sql
 do
   echo "=== $f ==="

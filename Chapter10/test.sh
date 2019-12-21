@@ -1,8 +1,10 @@
 #!/bin/bash
 # https://dev.mysql.com/doc/dev/mysql-server/latest/PAGE_MYSQL_TEST_RUN.html
 # Fedora: dnf install mysql-community-test mysql-shell
-connect_options="-S /tmp/mysql_sandbox8017.sock -u msandbox -pmsandbox"
-mysqlx_uri="root:msandbox@127.0.0.1:18017"
+connect_options="-S /tmp/mysql_sandbox8018.sock -u msandbox -pmsandbox"
+mysqlx_uri="root:msandbox@127.0.0.1:18018"
+
+shopt -s nullglob
 
 for f in ch*.sql
 do
