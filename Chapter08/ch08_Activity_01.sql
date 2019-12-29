@@ -1,3 +1,8 @@
+USE test;
+--disable_warnings
+DROP TABLE IF EXISTS airports;
+--enable_warnings
+
 CREATE TABLE airports (
   iata_code CHAR(3) PRIMARY KEY,
   location VARCHAR(255) NOT NULL,
@@ -11,3 +16,9 @@ INSERT INTO airports VALUES
 ('LAX', 'Los Angeles, California', 'United States', 43049000),
 ('HND', 'Ōta, Tokyo', 'Japan', 41435000),
 ('DBX', 'Garhoud, Dubai', 'United Arab Emirates', 41278000);
+
+SELECT * FROM airports;
+
+SELECT * FROM airports ORDER BY passengers DESC;
+
+DROP TABLE IF EXISTS airports;

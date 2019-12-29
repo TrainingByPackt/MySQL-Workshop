@@ -23,10 +23,10 @@ do
   echo "=== $f ==="
   if [ ! -e ${f:0:-2}result ]
   then
-    mysqlsh ${mysqlx_uri}  --interactive --result-format=json/raw -f $f 2> /dev/null | egrep '^{' > ${f:0:-2}result
+    mysqlsh ${mysqlx_uri}  --interactive --result-format=json/raw -f $f 2> /dev/null | egrep '^{' | sed -E 's/[0-9a-f]{28}/<generated_id>/g' > ${f:0:-2}result
   else
     tmp=$(mktemp)
-    mysqlsh ${mysqlx_uri}  --interactive --result-format=json/raw -f $f 2> /dev/null | egrep '^{' > $tmp
+    mysqlsh ${mysqlx_uri}  --interactive --result-format=json/raw -f $f 2> /dev/null | egrep '^{' | sed -E 's/[0-9a-f]{28}/<generated_id>/g' > $tmp
     diff ${f:0:-2}result $tmp && echo ok
   fi
 done

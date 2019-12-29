@@ -1,3 +1,12 @@
+\use test
+\sql
+
+DROP TABLE IF EXISTS climate_history;
+DROP TABLE IF EXISTS building_report;
+DROP TABLE IF EXISTS building1;
+DROP TABLE IF EXISTS building2;
+DROP TABLE IF EXISTS building3;
+
 CREATE TABLE climate_history (
   report_date date NOT NULL PRIMARY KEY,
   temperature DECIMAL(3,1),
