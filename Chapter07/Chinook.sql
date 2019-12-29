@@ -29,7 +29,7 @@ CREATE TABLE `album` (
   `Title` varchar(160) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `ArtistId` int(11) NOT NULL,
   PRIMARY KEY (`AlbumId`)
-) ENGINE=InnoDB AUTO_INCREMENT=348 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -53,7 +53,7 @@ CREATE TABLE `artist` (
   `ArtistId` int(11) NOT NULL AUTO_INCREMENT,
   `Name` varchar(120) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   PRIMARY KEY (`ArtistId`)
-) ENGINE=InnoDB AUTO_INCREMENT=276 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -64,36 +64,6 @@ LOCK TABLES `artist` WRITE;
 /*!40000 ALTER TABLE `artist` DISABLE KEYS */;
 INSERT INTO `artist` VALUES (1,'AC/DC'),(2,'Accept'),(3,'Aerosmith'),(4,'Alanis Morissette'),(5,'Alice In Chains'),(6,'Antônio Carlos Jobim'),(7,'Apocalyptica'),(8,'Audioslave'),(9,'BackBeat'),(10,'Billy Cobham'),(11,'Black Label Society'),(12,'Black Sabbath'),(13,'Body Count'),(14,'Bruce Dickinson'),(15,'Buddy Guy'),(16,'Caetano Veloso'),(17,'Chico Buarque'),(18,'Chico Science & Nação Zumbi'),(19,'Cidade Negra'),(20,'Cláudio Zoli'),(21,'Various Artists'),(22,'Led Zeppelin'),(23,'Frank Zappa & Captain Beefheart'),(24,'Marcos Valle'),(25,'Milton Nascimento & Bebeto'),(26,'Azymuth'),(27,'Gilberto Gil'),(28,'João Gilberto'),(29,'Bebel Gilberto'),(30,'Jorge Vercilo'),(31,'Baby Consuelo'),(32,'Ney Matogrosso'),(33,'Luiz Melodia'),(34,'Nando Reis'),(35,'Pedro Luís & A Parede'),(36,'O Rappa'),(37,'Ed Motta'),(38,'Banda Black Rio'),(39,'Fernanda Porto'),(40,'Os Cariocas'),(41,'Elis Regina'),(42,'Milton Nascimento'),(43,'A Cor Do Som'),(44,'Kid Abelha'),(45,'Sandra De Sá'),(46,'Jorge Ben'),(47,'Hermeto Pascoal'),(48,'Barão Vermelho'),(49,'Edson, DJ Marky & DJ Patife Featuring Fernanda Porto'),(50,'Metallica'),(51,'Queen'),(52,'Kiss'),(53,'Spyro Gyra'),(54,'Green Day'),(55,'David Coverdale'),(56,'Gonzaguinha'),(57,'Os Mutantes'),(58,'Deep Purple'),(59,'Santana'),(60,'Santana Feat. Dave Matthews'),(61,'Santana Feat. Everlast'),(62,'Santana Feat. Rob Thomas'),(63,'Santana Feat. Lauryn Hill & Cee-Lo'),(64,'Santana Feat. The Project G&B'),(65,'Santana Feat. Maná'),(66,'Santana Feat. Eagle-Eye Cherry'),(67,'Santana Feat. Eric Clapton'),(68,'Miles Davis'),(69,'Gene Krupa'),(70,'Toquinho & Vinícius'),(71,'Vinícius De Moraes & Baden Powell'),(72,'Vinícius De Moraes'),(73,'Vinícius E Qurteto Em Cy'),(74,'Vinícius E Odette Lara'),(75,'Vinicius, Toquinho & Quarteto Em Cy'),(76,'Creedence Clearwater Revival'),(77,'Cássia Eller'),(78,'Def Leppard'),(79,'Dennis Chambers'),(80,'Djavan'),(81,'Eric Clapton'),(82,'Faith No More'),(83,'Falamansa'),(84,'Foo Fighters'),(85,'Frank Sinatra'),(86,'Funk Como Le Gusta'),(87,'Godsmack'),(88,'Guns N\' Roses'),(89,'Incognito'),(90,'Iron Maiden'),(91,'James Brown'),(92,'Jamiroquai'),(93,'JET'),(94,'Jimi Hendrix'),(95,'Joe Satriani'),(96,'Jota Quest'),(97,'João Suplicy'),(98,'Judas Priest'),(99,'Legião Urbana'),(100,'Lenny Kravitz'),(101,'Lulu Santos'),(102,'Marillion'),(103,'Marisa Monte'),(104,'Marvin Gaye'),(105,'Men At Work'),(106,'Motörhead'),(107,'Motörhead & Girlschool'),(108,'Mônica Marianno'),(109,'Mötley Crüe'),(110,'Nirvana'),(111,'O Terço'),(112,'Olodum'),(113,'Os Paralamas Do Sucesso'),(114,'Ozzy Osbourne'),(115,'Page & Plant'),(116,'Passengers'),(117,'Paul D\'Ianno'),(118,'Pearl Jam'),(119,'Peter Tosh'),(120,'Pink Floyd'),(121,'Planet Hemp'),(122,'R.E.M. Feat. Kate Pearson'),(123,'R.E.M. Feat. KRS-One'),(124,'R.E.M.'),(125,'Raimundos'),(126,'Raul Seixas'),(127,'Red Hot Chili Peppers'),(128,'Rush'),(129,'Simply Red'),(130,'Skank'),(131,'Smashing Pumpkins'),(132,'Soundgarden'),(133,'Stevie Ray Vaughan & Double Trouble'),(134,'Stone Temple Pilots'),(135,'System Of A Down'),(136,'Terry Bozzio, Tony Levin & Steve Stevens'),(137,'The Black Crowes'),(138,'The Clash'),(139,'The Cult'),(140,'The Doors'),(141,'The Police'),(142,'The Rolling Stones'),(143,'The Tea Party'),(144,'The Who'),(145,'Tim Maia'),(146,'Titãs'),(147,'Battlestar Galactica'),(148,'Heroes'),(149,'Lost'),(150,'U2'),(151,'UB40'),(152,'Van Halen'),(153,'Velvet Revolver'),(154,'Whitesnake'),(155,'Zeca Pagodinho'),(156,'The Office'),(157,'Dread Zeppelin'),(158,'Battlestar Galactica (Classic)'),(159,'Aquaman'),(160,'Christina Aguilera featuring BigElf'),(161,'Aerosmith & Sierra Leone\'s Refugee Allstars'),(162,'Los Lonely Boys'),(163,'Corinne Bailey Rae'),(164,'Dhani Harrison & Jakob Dylan'),(165,'Jackson Browne'),(166,'Avril Lavigne'),(167,'Big & Rich'),(168,'Youssou N\'Dour'),(169,'Black Eyed Peas'),(170,'Jack Johnson'),(171,'Ben Harper'),(172,'Snow Patrol'),(173,'Matisyahu'),(174,'The Postal Service'),(175,'Jaguares'),(176,'The Flaming Lips'),(177,'Jack\'s Mannequin & Mick Fleetwood'),(178,'Regina Spektor'),(179,'Scorpions'),(180,'House Of Pain'),(181,'Xis'),(182,'Nega Gizza'),(183,'Gustavo & Andres Veiga & Salazar'),(184,'Rodox'),(185,'Charlie Brown Jr.'),(186,'Pedro Luís E A Parede'),(187,'Los Hermanos'),(188,'Mundo Livre S/A'),(189,'Otto'),(190,'Instituto'),(191,'Nação Zumbi'),(192,'DJ Dolores & Orchestra Santa Massa'),(193,'Seu Jorge'),(194,'Sabotage E Instituto'),(195,'Stereo Maracana'),(196,'Cake'),(197,'Aisha Duo'),(198,'Habib Koité and Bamada'),(199,'Karsh Kale'),(200,'The Posies'),(201,'Luciana Souza/Romero Lubambo'),(202,'Aaron Goldberg'),(203,'Nicolaus Esterhazy Sinfonia'),(204,'Temple of the Dog'),(205,'Chris Cornell'),(206,'Alberto Turco & Nova Schola Gregoriana'),(207,'Richard Marlow & The Choir of Trinity College, Cambridge'),(208,'English Concert & Trevor Pinnock'),(209,'Anne-Sophie Mutter, Herbert Von Karajan & Wiener Philharmoniker'),(210,'Hilary Hahn, Jeffrey Kahane, Los Angeles Chamber Orchestra & Margaret Batjer'),(211,'Wilhelm Kempff'),(212,'Yo-Yo Ma'),(213,'Scholars Baroque Ensemble'),(214,'Academy of St. Martin in the Fields & Sir Neville Marriner'),(215,'Academy of St. Martin in the Fields Chamber Ensemble & Sir Neville Marriner'),(216,'Berliner Philharmoniker, Claudio Abbado & Sabine Meyer'),(217,'Royal Philharmonic Orchestra & Sir Thomas Beecham'),(218,'Orchestre Révolutionnaire et Romantique & John Eliot Gardiner'),(219,'Britten Sinfonia, Ivor Bolton & Lesley Garrett'),(220,'Chicago Symphony Chorus, Chicago Symphony Orchestra & Sir Georg Solti'),(221,'Sir Georg Solti & Wiener Philharmoniker'),(222,'Academy of St. Martin in the Fields, John Birch, Sir Neville Marriner & Sylvia McNair'),(223,'London Symphony Orchestra & Sir Charles Mackerras'),(224,'Barry Wordsworth & BBC Concert Orchestra'),(225,'Herbert Von Karajan, Mirella Freni & Wiener Philharmoniker'),(226,'Eugene Ormandy'),(227,'Luciano Pavarotti'),(228,'Leonard Bernstein & New York Philharmonic'),(229,'Boston Symphony Orchestra & Seiji Ozawa'),(230,'Aaron Copland & London Symphony Orchestra'),(231,'Ton Koopman'),(232,'Sergei Prokofiev & Yuri Temirkanov'),(233,'Chicago Symphony Orchestra & Fritz Reiner'),(234,'Orchestra of The Age of Enlightenment'),(235,'Emanuel Ax, Eugene Ormandy & Philadelphia Orchestra'),(236,'James Levine'),(237,'Berliner Philharmoniker & Hans Rosbaud'),(238,'Maurizio Pollini'),(239,'Academy of St. Martin in the Fields, Sir Neville Marriner & William Bennett'),(240,'Gustav Mahler'),(241,'Felix Schmidt, London Symphony Orchestra & Rafael Frühbeck de Burgos'),(242,'Edo de Waart & San Francisco Symphony'),(243,'Antal Doráti & London Symphony Orchestra'),(244,'Choir Of Westminster Abbey & Simon Preston'),(245,'Michael Tilson Thomas & San Francisco Symphony'),(246,'Chor der Wiener Staatsoper, Herbert Von Karajan & Wiener Philharmoniker'),(247,'The King\'s Singers'),(248,'Berliner Philharmoniker & Herbert Von Karajan'),(249,'Sir Georg Solti, Sumi Jo & Wiener Philharmoniker'),(250,'Christopher O\'Riley'),(251,'Fretwork'),(252,'Amy Winehouse'),(253,'Calexico'),(254,'Otto Klemperer & Philharmonia Orchestra'),(255,'Yehudi Menuhin'),(256,'Philharmonia Orchestra & Sir Neville Marriner'),(257,'Academy of St. Martin in the Fields, Sir Neville Marriner & Thurston Dart'),(258,'Les Arts Florissants & William Christie'),(259,'The 12 Cellists of The Berlin Philharmonic'),(260,'Adrian Leaper & Doreen de Feis'),(261,'Roger Norrington, London Classical Players'),(262,'Charles Dutoit & L\'Orchestre Symphonique de Montréal'),(263,'Equale Brass Ensemble, John Eliot Gardiner & Munich Monteverdi Orchestra and Choir'),(264,'Kent Nagano and Orchestre de l\'Opéra de Lyon'),(265,'Julian Bream'),(266,'Martin Roscoe'),(267,'Göteborgs Symfoniker & Neeme Järvi'),(268,'Itzhak Perlman'),(269,'Michele Campanella'),(270,'Gerald Moore'),(271,'Mela Tenenbaum, Pro Musica Prague & Richard Kapp'),(272,'Emerson String Quartet'),(273,'C. Monteverdi, Nigel Rogers - Chiaroscuro; London Baroque; London Cornett & Sackbu'),(274,'Nash Ensemble'),(275,'Philip Glass Ensemble');
 /*!40000 ALTER TABLE `artist` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `contact_register`
---
-
-DROP TABLE IF EXISTS `contact_register`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `contact_register` (
-  `contact_register_id` int(11) NOT NULL AUTO_INCREMENT,
-  `Contact_Date` datetime DEFAULT NULL,
-  `Contact_Name` varchar(25) DEFAULT NULL,
-  `Contact_Comments` varchar(255) DEFAULT NULL,
-  `Action` varchar(255) DEFAULT NULL,
-  `Followup_Required` varchar(45) DEFAULT NULL,
-  `Status` varchar(25) DEFAULT NULL,
-  `Closed` tinyint(1) DEFAULT '0',
-  PRIMARY KEY (`contact_register_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `contact_register`
---
-
-LOCK TABLES `contact_register` WRITE;
-/*!40000 ALTER TABLE `contact_register` DISABLE KEYS */;
-INSERT INTO `contact_register` VALUES (1,'2019-06-01 00:00:00','Anonymous','I am using a 2400bd dial up modem and I find your downloads speeds are too long, can you speed them up please','Issue is with users technology, there is nothing that can be done and we cannot contact the user','No','Closed',1),(2,'2019-06-02 00:00:00','Mary Meenow','There are not enough wedding songs on your site','Emailed customer stating we will look for my songs about weddings and asked if she could suggest any songs. Handed over to purchasing for further action.','Yes','Open',0),(3,'2019-06-03 00:00:00','Fred Bloggs','I am having problems downloading since my credit card ran out of credit','Emailed customer suggesting that he should contact his credit card provider','No','Closed',1),(4,'2019-06-04 00:00:00','Johny Doe','I downloaded 3 songs last night but my credit card was charged twice, can you please investigate and refund the overcharge. Invoice # 123456','Investigated the claim, customer was correct. A refund has been issued along with a letter of apology and the issue has been handed to IT to investigate and fix','Yes, in one week to ensure customer is happy','Under Investigation',0),(5,'2019-06-05 00:00:00','Anonymous','People are quick to complain, I just wanted to say your site is great, keep up the good work','Can\'t respond, due to anonimity. I would be nice to say thank you','No','Closed',1),(6,'2019-06-06 00:00:00','Constance Complainer','It won\'t stop raining','A standard thank you for your comment response has been issue with a note stating how it is beyond our capabilities at this time to control the weather','No','Closed',1),(7,'2019-06-07 00:00:00','Ima Complainer','Can you supply snacks in the Listening Lounge page? ','Issued reply indicating that while we would like to supply snacks, the current technology is not capable of transmitting physical  items and that we are eagerly awaiting on the development of the Transport technology as  depicted in Start Trek.','No','Closed',1),(8,'2019-06-08 00:00:00','Anonymous','Some of your music has too much swearing','Issued a response thanking customer for the input. Asked for a list of specific tracks and will investigate putting ratings and warnings on individual tracks and albums','Yes','Under Investigation',0),(9,'2019-06-09 00:00:00','Tom Pettit','Great list of song titles','Issued a thank you response','No','Closed',1);
-/*!40000 ALTER TABLE `contact_register` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -118,7 +88,7 @@ CREATE TABLE `customer` (
   `Email` varchar(60) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `SupportRepId` int(11) DEFAULT NULL,
   PRIMARY KEY (`CustomerId`)
-) ENGINE=InnoDB AUTO_INCREMENT=60 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -127,7 +97,7 @@ CREATE TABLE `customer` (
 
 LOCK TABLES `customer` WRITE;
 /*!40000 ALTER TABLE `customer` DISABLE KEYS */;
-INSERT INTO `customer` VALUES (1,'Luís','Gonçalves','Embraer - Empresa Brasileira de Aeronáutica S.A.','Av. Brigadeiro Faria Lima, 2170','São José dos Campos','SP','Brazil','12227-000','+55 (12) 3923-5555','+55 (12) 3923-5566','luisg@embraer.com.br',3),(2,'Leonie','Köhler',NULL,'Theodor-Heuss-Straße 34','Stuttgart',NULL,'Germany','70174','+49 0711 2842222',NULL,'leonekohler@surfeu.de',5),(3,'François','Tremblay',NULL,'1498 rue Bélanger','Montréal','QC','Canada','H2G 1A7','+1 (514) 721-4711',NULL,'ftremblay@gmail.com',3),(4,'Bjørn','Hansen',NULL,'Ullevålsveien 14','Oslo',NULL,'Norway','0171','+47 22 44 22 22',NULL,'bjorn.hansen@yahoo.no',4),(5,'František','Wichterlová','JetBrains s.r.o.','Klanova 9/506','Prague',NULL,'Czech Republic','14700','+420 2 4172 5555','+420 2 4172 5555','frantisekw@jetbrains.com',4),(6,'Helena','Holý',NULL,'Rilská 3174/6','Prague',NULL,'Czech Republic','14300','+420 2 4177 0449',NULL,'hholy@gmail.com',5),(7,'Astrid','Gruber',NULL,'Rotenturmstraße 4, 1010 Innere Stadt','Vienne',NULL,'Austria','1010','+43 01 5134505',NULL,'astrid.gruber@apple.at',5),(8,'Daan','Peeters',NULL,'Grétrystraat 63','Brussels',NULL,'Belgium','1000','+32 02 219 03 03',NULL,'daan_peeters@apple.be',4),(9,'Kara','Nielsen',NULL,'Sønder Boulevard 51','Copenhagen',NULL,'Denmark','1720','+453 3331 9991',NULL,'kara.nielsen@jubii.dk',4),(10,'Eduardo','Martins','Woodstock Discos','Rua Dr. Falcão Filho, 155','São Paulo','SP','Brazil','01007-010','+55 (11) 3033-5446','+55 (11) 3033-4564','eduardo@woodstock.com.br',4),(11,'Alexandre','Rocha','Banco do Brasil S.A.','Av. Paulista, 2022','São Paulo','SP','Brazil','01310-200','+55 (11) 3055-3278','+55 (11) 3055-8131','alero@uol.com.br',5),(12,'Roberto','Almeida','Riotur','Praça Pio X, 119','Rio de Janeiro','RJ','Brazil','20040-020','+55 (21) 2271-7000','+55 (21) 2271-7070','roberto.almeida@riotur.gov.br',3),(13,'Fernanda','Ramos',NULL,'Qe 7 Bloco G','Brasília','DF','Brazil','71020-677','+55 (61) 3363-5547','+55 (61) 3363-7855','fernadaramos4@uol.com.br',4),(14,'Mark','Philips','Telus','8210 111 ST NW','Edmonton','AB','Canada','T6G 2C7','+1 (780) 434-4554','+1 (780) 434-5565','mphilips12@shaw.ca',5),(15,'Jennifer','Peterson','Rogers Canada','700 W Pender Street','Vancouver','BC','Canada','V6C 1G8','+1 (604) 688-2255','+1 (604) 688-8756','jenniferp@rogers.ca',3),(16,'Frank','Harris','Google Inc.','1600 Amphitheatre Parkway','Mountain View','CA','USA','94043-1351','+1 (650) 253-0000','+1 (650) 253-0000','fharris@google.com',4),(17,'Jack','Smith','Microsoft Corporation','1 Microsoft Way','Redmond','WA','USA','98052-8300','+1 (425) 882-8080','+1 (425) 882-8081','jacksmith@microsoft.com',5),(18,'Michelle','Brooks',NULL,'627 Broadway','New York','NY','USA','10012-2612','+1 (212) 221-3546','+1 (212) 221-4679','michelleb@aol.com',3),(19,'Tim','Goyer','Apple Inc.','1 Infinite Loop','Cupertino','CA','USA','95014','+1 (408) 996-1010','+1 (408) 996-1011','tgoyer@apple.com',3),(20,'Dan','Miller',NULL,'541 Del Medio Avenue','Mountain View','CA','USA','94040-111','+1 (650) 644-3358',NULL,'dmiller@comcast.com',4),(21,'Kathy','Chase',NULL,'801 W 4th Street','Reno','NV','USA','89503','+1 (775) 223-7665',NULL,'kachase@hotmail.com',5),(22,'Heather','Leacock',NULL,'120 S Orange Ave','Orlando','FL','USA','32801','+1 (407) 999-7788',NULL,'hleacock@gmail.com',4),(23,'John','Gordon',NULL,'69 Salem Street','Boston','MA','USA','2113','+1 (617) 522-1333',NULL,'johngordon22@yahoo.com',4),(24,'Frank','Ralston',NULL,'162 E Superior Street','Chicago','IL','USA','60611','+1 (312) 332-3232',NULL,'fralston@gmail.com',3),(25,'Victor','Stevens',NULL,'319 N. Frances Street','Madison','WI','USA','53703','+1 (608) 257-0597',NULL,'vstevens@yahoo.com',5),(26,'Richard','Cunningham',NULL,'2211 W Berry Street','Fort Worth','TX','USA','76110','+1 (817) 924-7272',NULL,'ricunningham@hotmail.com',4),(27,'Patrick','Gray',NULL,'1033 N Park Ave','Tucson','AZ','USA','85719','+1 (520) 622-4200',NULL,'patrick.gray@aol.com',4),(28,'Julia','Barnett',NULL,'302 S 700 E','Salt Lake City','UT','USA','84102','+1 (801) 531-7272',NULL,'jubarnett@gmail.com',5),(29,'Robert','Brown',NULL,'796 Dundas Street West','Toronto','ON','Canada','M6J 1V1','+1 (416) 363-8888',NULL,'robbrown@shaw.ca',3),(30,'Edward','Francis',NULL,'230 Elgin Street','Ottawa','ON','Canada','K2P 1L7','+1 (613) 234-3322',NULL,'edfrancis@yachoo.ca',3),(31,'Martha','Silk',NULL,'194A Chain Lake Drive','Halifax','NS','Canada','B3S 1C5','+1 (902) 450-0450',NULL,'marthasilk@gmail.com',5),(32,'Aaron','Mitchell',NULL,'696 Osborne Street','Winnipeg','MB','Canada','R3L 2B9','+1 (204) 452-6452',NULL,'aaronmitchell@yahoo.ca',4),(33,'Ellie','Sullivan',NULL,'5112 48 Street','Yellowknife','NT','Canada','X1A 1N6','+1 (867) 920-2233',NULL,'ellie.sullivan@shaw.ca',3),(34,'João','Fernandes',NULL,'Rua da Assunção 53','Lisbon',NULL,'Portugal',NULL,'+351 (213) 466-111',NULL,'jfernandes@yahoo.pt',4),(35,'Madalena','Sampaio',NULL,'Rua dos Campeões Europeus de Viena, 4350','Porto',NULL,'Portugal',NULL,'+351 (225) 022-448',NULL,'masampaio@sapo.pt',4),(36,'Hannah','Schneider',NULL,'Tauentzienstraße 8','Berlin',NULL,'Germany','10789','+49 030 26550280',NULL,'hannah.schneider@yahoo.de',5),(37,'Fynn','Zimmermann',NULL,'Berger Straße 10','Frankfurt',NULL,'Germany','60316','+49 069 40598889',NULL,'fzimmermann@yahoo.de',3),(38,'Niklas','Schröder',NULL,'Barbarossastraße 19','Berlin',NULL,'Germany','10779','+49 030 2141444',NULL,'nschroder@surfeu.de',3),(39,'Camille','Bernard',NULL,'4, Rue Milton','Paris',NULL,'France','75009','+33 01 49 70 65 65',NULL,'camille.bernard@yahoo.fr',4),(40,'Dominique','Lefebvre',NULL,'8, Rue Hanovre','Paris',NULL,'France','75002','+33 01 47 42 71 71',NULL,'dominiquelefebvre@gmail.com',4),(41,'Marc','Dubois',NULL,'11, Place Bellecour','Lyon',NULL,'France','69002','+33 04 78 30 30 30',NULL,'marc.dubois@hotmail.com',5),(42,'Wyatt','Girard',NULL,'9, Place Louis Barthou','Bordeaux',NULL,'France','33000','+33 05 56 96 96 96',NULL,'wyatt.girard@yahoo.fr',3),(43,'Isabelle','Mercier',NULL,'68, Rue Jouvence','Dijon',NULL,'France','21000','+33 03 80 73 66 99',NULL,'isabelle_mercier@apple.fr',3),(44,'Terhi','Hämäläinen',NULL,'Porthaninkatu 9','Helsinki',NULL,'Finland','00530','+358 09 870 2000',NULL,'terhi.hamalainen@apple.fi',3),(45,'Ladislav','Kovács',NULL,'Erzsébet krt. 58.','Budapest',NULL,'Hungary','H-1073',NULL,NULL,'ladislav_kovacs@apple.hu',3),(46,'Hugh','O\'Reilly',NULL,'3 Chatham Street','Dublin','Dublin','Ireland',NULL,'+353 01 6792424',NULL,'hughoreilly@apple.ie',3),(47,'Lucas','Mancini',NULL,'Via Degli Scipioni, 43','Rome','RM','Italy','00192','+39 06 39733434',NULL,'lucas.mancini@yahoo.it',5),(48,'Johannes','Van der Berg',NULL,'Lijnbaansgracht 120bg','Amsterdam','VV','Netherlands','1016','+31 020 6223130',NULL,'johavanderberg@yahoo.nl',5),(49,'Stanisław','Wójcik',NULL,'Ordynacka 10','Warsaw',NULL,'Poland','00-358','+48 22 828 37 39',NULL,'stanisław.wójcik@wp.pl',4),(50,'Enrique','Muñoz',NULL,'C/ San Bernardo 85','Madrid',NULL,'Spain','28015','+34 914 454 454',NULL,'enrique_munoz@yahoo.es',5),(51,'Joakim','Johansson',NULL,'Celsiusg. 9','Stockholm',NULL,'Sweden','11230','+46 08-651 52 52',NULL,'joakim.johansson@yahoo.se',5),(52,'Emma','Jones',NULL,'202 Hoxton Street','London',NULL,'United Kingdom','N1 5LH','+44 020 7707 0707',NULL,'emma_jones@hotmail.com',3),(53,'Phil','Hughes',NULL,'113 Lupus St','London',NULL,'United Kingdom','SW1V 3EN','+44 020 7976 5722',NULL,'phil.hughes@gmail.com',3),(54,'Steve','Murray',NULL,'110 Raeburn Pl','Edinburgh ',NULL,'United Kingdom','EH4 1HH','+44 0131 315 3300',NULL,'steve.murray@yahoo.uk',5),(55,'Mark','Taylor',NULL,'421 Bourke Street','Sydney','NSW','Australia','2010','+61 (02) 9332 3633',NULL,'mark.taylor@yahoo.au',4),(56,'Diego','Gutiérrez',NULL,'307 Macacha Güemes','Buenos Aires',NULL,'Argentina','1106','+54 (0)11 4311 4333',NULL,'diego.gutierrez@yahoo.ar',4),(57,'Luis','Rojas',NULL,'Calle Lira, 198','Santiago',NULL,'Chile',NULL,'+56 (0)2 635 4444',NULL,'luisrojas@yahoo.cl',5),(58,'Manoj','Pareek',NULL,'12,Community Centre','Delhi',NULL,'India','110017','+91 0124 39883988',NULL,'manoj.pareek@rediff.com',3),(59,'Puja','Srivastava',NULL,'3,Raj Bhavan Road','Bangalore',NULL,'India','560001','+91 080 22289999',NULL,'puja_srivastava@yahoo.in',3);
+INSERT INTO `customer` VALUES (1,'Luís','Gonçalves','Embraer - Empresa Brasileira de Aeronáutica S.A.','Av. Brigadeiro Faria Lima, 2170','São José dos Campos','Sp','Brazil','12227-000','+55 (12) 3923-5555','+55 (12) 3923-5566','ssssszsssssss',3),(2,'Leonie','Köhler',NULL,'Theodor-Heuss-Straße 34','Stuttgart',NULL,'Germany','70174','+49 0711 2842222',NULL,'leonekohler@surfeu.de',5),(3,'François','Tremblay',NULL,'1498 rue Bélanger','Montréal','QC','Canada','H2G 1A7','+1 (514) 721-4711',NULL,'ftremblay@gmail.com',3),(4,'Bjørn','Hansen',NULL,'Ullevålsveien 14','Oslo',NULL,'Norway','0171','+47 22 44 22 22',NULL,'bjorn.hansen@yahoo.no',4),(5,'František','Wichterlová','JetBrains s.r.o.','Klanova 9/506','Prague',NULL,'Czech Republic','14700','+420 2 4172 5555','+420 2 4172 5555','frantisekw@jetbrains.com',4),(6,'Helena','Holý',NULL,'Rilská 3174/6','Prague',NULL,'Czech Republic','14300','+420 2 4177 0449',NULL,'hholy@gmail.com',5),(7,'Astrid','Gruber',NULL,'Rotenturmstraße 4, 1010 Innere Stadt','Vienne',NULL,'Austria','1010','+43 01 5134505',NULL,'astrid.gruber@apple.at',5),(8,'Daan','Peeters',NULL,'Grétrystraat 63','Brussels',NULL,'Belgium','1000','+32 02 219 03 03',NULL,'daan_peeters@apple.be',4),(9,'Kara','Nielsen',NULL,'Sønder Boulevard 51','Copenhagen',NULL,'Denmark','1720','+453 3331 9991',NULL,'kara.nielsen@jubii.dk',4),(10,'Eduardo','Martins','Woodstock Discos','Rua Dr. Falcão Filho, 155','São Paulo','SP','Brazil','01007-010','+55 (11) 3033-5446','+55 (11) 3033-4564','eduardo@woodstock.com.br',4),(11,'Alexandre','Rocha','Banco do Brasil S.A.','Av. Paulista, 2022','São Paulo','SP','Brazil','01310-200','+55 (11) 3055-3278','+55 (11) 3055-8131','alero@uol.com.br',5),(12,'Roberto','Almeida','Riotur','Praça Pio X, 119','Rio de Janeiro','RJ','Brazil','20040-020','+55 (21) 2271-7000','+55 (21) 2271-7070','roberto.almeida@riotur.gov.br',3),(13,'Fernanda','Ramos',NULL,'Qe 7 Bloco G','Brasília','DF','Brazil','71020-677','+55 (61) 3363-5547','+55 (61) 3363-7855','fernadaramos4@uol.com.br',4),(14,'Mark','Philips','Telus','8210 111 ST NW','Edmonton','AB','Canada','T6G 2C7','+1 (780) 434-4554','+1 (780) 434-5565','mphilips12@shaw.ca',5),(15,'Jennifer','Peterson','Rogers Canada','700 W Pender Street','Vancouver','BC','Canada','V6C 1G8','+1 (604) 688-2255','+1 (604) 688-8756','jenniferp@rogers.ca',3),(16,'Frank','Harris','Google Inc.','1600 Amphitheatre Parkway','Mountain View','CA','USA','94043-1351','+1 (650) 253-0000','+1 (650) 253-0000','fharris@google.com',4),(17,'Jack','Smith','Microsoft Corporation','1 Microsoft Way','Redmond','WA','USA','98052-8300','+1 (425) 882-8080','+1 (425) 882-8081','jacksmith@microsoft.com',5),(18,'Michelle','Brooks',NULL,'627 Broadway','New York','NY','USA','10012-2612','+1 (212) 221-3546','+1 (212) 221-4679','michelleb@aol.com',3),(19,'Tim','Goyer','Apple Inc.','1 Infinite Loop','Cupertino','CA','USA','95014','+1 (408) 996-1010','+1 (408) 996-1011','tgoyer@apple.com',3),(20,'Dan','Miller',NULL,'541 Del Medio Avenue','Mountain View','CA','USA','94040-111','+1 (650) 644-3358',NULL,'dmiller@comcast.com',4),(21,'Kathy','Chase',NULL,'801 W 4th Street','Reno','NV','USA','89503','+1 (775) 223-7665',NULL,'kachase@hotmail.com',5),(22,'Heather','Leacock',NULL,'120 S Orange Ave','Orlando','FL','USA','3280111','+1 (407) 999-7788','12345','hleacock@gmail.com',4),(23,'John','Gordon',NULL,'69 Salem Street','Boston','MA','USA','2113','+1 (617) 522-1333','12345','johngordon22@yahoo.com',4),(24,'Frank','Ralston',NULL,'162 E Superior Street','Chicago','IL','USA','60611','+1 (312) 332-3232',NULL,'fralston@gmail.com',3),(25,'Victor','Stevens',NULL,'319 N. Frances Street','Madison','WI','USA','53703','+1 (608) 257-0597',NULL,'vstevens@yahoo.com',5),(26,'Richard','Cunningham',NULL,'2211 W Berry Street','Fort Worth','TX','USA','76110','+1 (817) 924-7272',NULL,'ricunningham@hotmail.com',4),(27,'Patrick','Gray',NULL,'1033 N Park Ave','Tucson','AZ','USA','85719','+1 (520) 622-4200',NULL,'patrick.gray@aol.com',4),(28,'Julia','Barnett',NULL,'302 S 700 E','Salt Lake City','UT','USA','84102','+1 (801) 531-7272',NULL,'jubarnett@gmail.com',5),(29,'Robert','Brown',NULL,'796 Dundas Street West','Toronto','ON','Canada','M6J 1V1','+1 (416) 363-8888',NULL,'robbrown@shaw.ca',3),(30,'Edward','Francis',NULL,'230 Elgin Street','Ottawa','ON','Canada','K2P 1L7','+1 (613) 234-3322',NULL,'edfrancis@yachoo.ca',3),(31,'Martha','Silk',NULL,'194A Chain Lake Drive','Halifax','NS','Canada','B3S 1C5','+1 (902) 450-0450',NULL,'marthasilk@gmail.com',5),(32,'Aaron','Mitchell',NULL,'696 Osborne Street','Winnipeg','MB','Canada','R3L 2B9','+1 (204) 452-6452',NULL,'aaronmitchell@yahoo.ca',4),(33,'Ellie','Sullivan',NULL,'5112 48 Street','Yellowknife','NT','Canada','X1A 1N6','+1 (867) 920-2233',NULL,'ellie.sullivan@shaw.ca',3),(34,'João','Fernandes',NULL,'Rua da Assunção 53','Lisbon',NULL,'Portugal',NULL,'+351 (213) 466-111',NULL,'jfernandes@yahoo.pt',4),(35,'Madalena','Sampaio',NULL,'Rua dos Campeões Europeus de Viena, 4350','Porto',NULL,'Portugal',NULL,'+351 (225) 022-448',NULL,'masampaio@sapo.pt',4),(36,'Hannah','Schneider',NULL,'Tauentzienstraße 8','Berlin',NULL,'Germany','10789','+49 030 26550280',NULL,'hannah.schneider@yahoo.de',5),(37,'Fynn','Zimmermann',NULL,'Berger Straße 10','Frankfurt',NULL,'Germany','60316','+49 069 40598889',NULL,'fzimmermann@yahoo.de',3),(38,'Niklas','Schröder',NULL,'Barbarossastraße 19','Berlin',NULL,'Germany','10779','+49 030 2141444',NULL,'nschroder@surfeu.de',3),(39,'Camille','Bernard',NULL,'4, Rue Milton','Paris',NULL,'France','75009','+33 01 49 70 65 65',NULL,'camille.bernard@yahoo.fr',4),(40,'Dominique','Lefebvre',NULL,'8, Rue Hanovre','Paris',NULL,'France','75002','+33 01 47 42 71 71',NULL,'dominiquelefebvre@gmail.com',4),(41,'Marc','Dubois',NULL,'11, Place Bellecour','Lyon',NULL,'France','69002','+33 04 78 30 30 30',NULL,'marc.dubois@hotmail.com',5),(42,'Wyatt','Girard',NULL,'9, Place Louis Barthou','Bordeaux',NULL,'France','33000','+33 05 56 96 96 96',NULL,'wyatt.girard@yahoo.fr',3),(43,'Isabelle','Mercier',NULL,'68, Rue Jouvence','Dijon',NULL,'France','21000','+33 03 80 73 66 99',NULL,'isabelle_mercier@apple.fr',3),(44,'Terhi','Hämäläinen',NULL,'Porthaninkatu 9','Helsinki',NULL,'Finland','00530','+358 09 870 2000',NULL,'terhi.hamalainen@apple.fi',3),(45,'Ladislav','Kovács',NULL,'Erzsébet krt. 58.','Budapest',NULL,'Hungary','H-1073',NULL,NULL,'ladislav_kovacs@apple.hu',3),(46,'Hugh','O\'Reilly',NULL,'3 Chatham Street','Dublin','Dublin','Ireland',NULL,'+353 01 6792424',NULL,'hughoreilly@apple.ie',3),(47,'Lucas','Mancini',NULL,'Via Degli Scipioni, 43','Rome','RM','Italy','00192','+39 06 39733434',NULL,'lucas.mancini@yahoo.it',5),(48,'Johannes','Van der Berg',NULL,'Lijnbaansgracht 120bg','Amsterdam','VV','Netherlands','1016','+31 020 6223130',NULL,'johavanderberg@yahoo.nl',5),(49,'Stanisław','Wójcik',NULL,'Ordynacka 10','Warsaw',NULL,'Poland','00-358','+48 22 828 37 39',NULL,'stanisław.wójcik@wp.pl',4),(50,'Enrique','Muñoz',NULL,'C/ San Bernardo 85','Madrid',NULL,'Spain','28015','+34 914 454 454',NULL,'enrique_munoz@yahoo.es',5),(51,'Joakim','Johansson',NULL,'Celsiusg. 9','Stockholm',NULL,'Sweden','11230','+46 08-651 52 52',NULL,'joakim.johansson@yahoo.se',5),(52,'Emma','Jones',NULL,'202 Hoxton Street','London',NULL,'United Kingdom','N1 5LH','+44 020 7707 0707',NULL,'emma_jones@hotmail.com',3),(53,'Phil','Hughes',NULL,'113 Lupus St','London',NULL,'United Kingdom','SW1V 3EN','+44 020 7976 5722',NULL,'phil.hughes@gmail.com',3),(54,'Steve','Murray',NULL,'110 Raeburn Pl','Edinburgh ',NULL,'United Kingdom','EH4 1HH','+44 0131 315 3300',NULL,'steve.murray@yahoo.uk',5),(55,'Mark','Taylor',NULL,'421 Bourke Street','Sydney','NSW','Australia','2010','+61 (02) 9332 3633',NULL,'mark.taylor@yahoo.au',4),(56,'Diego','Gutiérrez',NULL,'307 Macacha Güemes','Buenos Aires',NULL,'Argentina','1106','+54 (0)11 4311 4333',NULL,'diego.gutierrez@yahoo.ar',4),(57,'Luis','Rojas',NULL,'Calle Lira, 198','Santiago',NULL,'Chile',NULL,'+56 (0)2 635 4444',NULL,'luisrojas@yahoo.cl',5),(58,'Manoj','Pareek',NULL,'12,Community Centre','Delhi',NULL,'India','110017','+91 0124 39883988',NULL,'manoj.pareek@rediff.com',3),(59,'Puja','Srivastava',NULL,'3,Raj Bhavan Road','Bangalore',NULL,'India','560001','+91 080 22289999',NULL,'puja_srivastava@yahoo.in',3);
 /*!40000 ALTER TABLE `customer` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -155,7 +125,7 @@ CREATE TABLE `employee` (
   `Fax` varchar(24) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   `Email` varchar(60) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   PRIMARY KEY (`EmployeeId`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -164,7 +134,7 @@ CREATE TABLE `employee` (
 
 LOCK TABLES `employee` WRITE;
 /*!40000 ALTER TABLE `employee` DISABLE KEYS */;
-INSERT INTO `employee` VALUES (1,'Adams','Andrew','General Manager',NULL,'1962-02-18 00:00:00','2002-08-14 00:00:00','11120 Jasper Ave NW','Edmonton','AB','Canada','T5K 2N1','+1 (780) 428-9482','+1 (780) 428-3457','andrew@chinookcorp.com'),(2,'Edwards','Nancy','Sales Manager',1,'1958-12-08 00:00:00','2002-05-01 00:00:00','825 8 Ave SW','Calgary','AB','Canada','T2P 2T3','+1 (403) 262-3443','+1 (403) 262-3322','nancy@chinookcorp.com'),(3,'Peacock','Jane','Sales Support Agent',2,'1973-08-29 00:00:00','2002-04-01 00:00:00','1111 6 Ave SW','Calgary','AB','Canada','T2P 5M5','+1 (403) 262-3443','+1 (403) 262-6712','jane@chinookcorp.com'),(4,'Park','Margaret','Sales Support Agent',2,'1947-09-19 00:00:00','2003-05-03 00:00:00','683 10 Street SW','Calgary','AB','Canada','T2P 5G3','+1 (403) 263-4423','+1 (403) 263-4289','margaret@chinookcorp.com'),(5,'Johnson','Steve','Sales Support Agent',2,'1965-03-03 00:00:00','2003-10-17 00:00:00','7727B 41 Ave','Calgary','AB','Canada','T3B 1Y7','1 (780) 836-9987','1 (780) 836-9543','steve@chinookcorp.com'),(6,'Mitchell','Michael','IT Manager',1,'1973-07-01 00:00:00','2003-10-17 00:00:00','5827 Bowness Road NW','Calgary','AB','Canada','T3B 0C5','+1 (403) 246-9887','+1 (403) 246-9899','michael@chinookcorp.com'),(7,'King','Robert','IT Staff',6,'1970-05-29 00:00:00','2004-01-02 00:00:00','590 Columbia Boulevard West','Lethbridge','AB','Canada','T1K 5N8','+1 (403) 456-9986','+1 (403) 456-8485','robert@chinookcorp.com'),(8,'Johnston','Laura','IT Staff',6,'1968-01-09 00:00:00','2004-03-04 00:00:00','923 7 ST NW','Lethbridge','AB','Canada','T1H 1Y8','+1 (403) 467-3351','+1 (403) 467-8772','laura@chinookcorp.com'),(9,'Bloggs','Fred','IT Staff',6,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `employee` VALUES (1,'Adams','Andrew','General Manager',NULL,'1962-02-18 00:00:00','2002-08-14 00:00:00','11120 Jasper Ave NW','Edmonton','AB','Canada','T5K 2N1','+1 (780) 428-9482','+1 (780) 428-3457','andrew@chinookcorp.com'),(2,'Edwards','Nancy','Sales Manager',1,'1958-12-08 00:00:00','2002-05-01 00:00:00','825 8 Ave SW','Calgary','AB','Canada','T2P 2T3','+1 (403) 262-3443','+1 (403) 262-3322','nancy@chinookcorp.com'),(3,'Peacock','Jane','Sales Support Agent',2,'1973-08-29 00:00:00','2002-04-01 00:00:00','1111 6 Ave SW','Calgary','AB','Canada','T2P 5M5','+1 (403) 262-3443','+1 (403) 262-6712','jane@chinookcorp.com'),(4,'Park','Margaret','Sales Support Agent',2,'1947-09-19 00:00:00','2003-05-03 00:00:00','683 10 Street SW','Calgary','AB','Canada','T2P 5G3','+1 (403) 263-4423','+1 (403) 263-4289','margaret@chinookcorp.com'),(5,'Johnson','Steve','Sales Support Agent',2,'1965-03-03 00:00:00','2003-10-17 00:00:00','7727B 41 Ave','Calgary','AB','Canada','T3B 1Y7','1 (780) 836-9987','1 (780) 836-9543','steve@chinookcorp.com'),(6,'Mitchell','Michael','IT Manager',1,'1973-07-01 00:00:00','2003-10-17 00:00:00','5827 Bowness Road NW','Calgary','AB','Canada','T3B 0C5','+1 (403) 246-9887','+1 (403) 246-9899','michael@chinookcorp.com'),(7,'King','Robert','IT Staff',6,'1970-05-29 00:00:00','2004-01-02 00:00:00','590 Columbia Boulevard West','Lethbridge','AB','Canada','T1K 5N8','+1 (403) 456-9986','+1 (403) 456-8485','robert@chinookcorp.com'),(8,'Johnston','Laura','IT Staff',6,'1968-01-09 00:00:00','2004-03-04 00:00:00','923 7 ST NW','Lethbridge','AB','Canada','T1H 1Y8','+1 (403) 467-3351','+1 (403) 467-8772','laura@chinookcorp.com'),(9,'Bloggs','Fred','IT Staff',6,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),(10,'zzz','zzz','zzz',6,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `employee` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -210,7 +180,7 @@ CREATE TABLE `invoice` (
   `BillingPostalCode` varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   `Total` decimal(10,2) NOT NULL,
   PRIMARY KEY (`InvoiceId`)
-) ENGINE=InnoDB AUTO_INCREMENT=413 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -237,7 +207,7 @@ CREATE TABLE `invoiceline` (
   `UnitPrice` decimal(10,2) NOT NULL,
   `Quantity` int(11) NOT NULL,
   PRIMARY KEY (`InvoiceLineId`)
-) ENGINE=InnoDB AUTO_INCREMENT=2241 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -261,7 +231,7 @@ CREATE TABLE `mediatype` (
   `MediaTypeId` int(11) NOT NULL AUTO_INCREMENT,
   `Name` varchar(120) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   PRIMARY KEY (`MediaTypeId`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -285,7 +255,7 @@ CREATE TABLE `playlist` (
   `PlaylistId` int(11) NOT NULL AUTO_INCREMENT,
   `Name` varchar(120) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   PRIMARY KEY (`PlaylistId`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -309,7 +279,7 @@ CREATE TABLE `playlisttrack` (
   `PlaylistId` int(11) NOT NULL AUTO_INCREMENT,
   `TrackId` int(11) NOT NULL,
   PRIMARY KEY (`PlaylistId`,`TrackId`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -340,7 +310,7 @@ CREATE TABLE `track` (
   `Bytes` int(11) DEFAULT NULL,
   `UnitPrice` decimal(10,2) NOT NULL,
   PRIMARY KEY (`TrackId`)
-) ENGINE=InnoDB AUTO_INCREMENT=3504 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -521,7 +491,7 @@ SET character_set_client = @saved_cs_client;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES,NO_ENGINE_SUBSTITUTION' */ ;
 DELIMITER ;;
-CREATE DEFINER=`Tom`@`%` PROCEDURE `spTotalSales`()
+CREATE PROCEDURE `spTotalSales`()
 BEGIN
 
 SELECT
@@ -549,7 +519,7 @@ DELIMITER ;
 /*!50001 SET character_set_results     = utf8 */;
 /*!50001 SET collation_connection      = utf8_general_ci */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
-/*!50013 DEFINER=`Tom`@`%` SQL SECURITY DEFINER */
+
 /*!50001 VIEW `vw_albumsales` AS select `album`.`Title` AS `Title`,`track`.`Name` AS `Name`,`invoiceline`.`Quantity` AS `Quantity`,`customer`.`Country` AS `Country`,`invoice`.`BillingCity` AS `BillingCity`,`invoiceline`.`UnitPrice` AS `UnitPrice`,`invoice`.`Total` AS `Total` from ((((`album` join `track` on((`album`.`AlbumId` = `track`.`AlbumId`))) join `invoiceline` on((`track`.`TrackId` = `invoiceline`.`TrackId`))) join `invoice` on((`invoiceline`.`InvoiceId` = `invoice`.`InvoiceId`))) join `customer` on((`customer`.`CustomerId` = `invoice`.`CustomerId`))) group by `album`.`Title`,`track`.`Name`,`invoiceline`.`Quantity`,`invoice`.`InvoiceDate`,`customer`.`Country`,`invoice`.`BillingCity`,`invoiceline`.`UnitPrice`,`invoice`.`Total` */;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
@@ -567,7 +537,7 @@ DELIMITER ;
 /*!50001 SET character_set_results     = utf8 */;
 /*!50001 SET collation_connection      = utf8_general_ci */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
-/*!50013 DEFINER=`Tom`@`%` SQL SECURITY DEFINER */
+
 /*!50001 VIEW `vw_alltimesales` AS select `invoiceline`.`Quantity` AS `Quantity`,`invoiceline`.`UnitPrice` AS `UnitPrice`,`track`.`Name` AS `Name`,count(`track`.`TrackId`) AS `Count_TrackId`,`invoice`.`InvoiceDate` AS `InvoiceDate` from ((`invoiceline` join `track` on((`invoiceline`.`TrackId` = `track`.`TrackId`))) join `invoice` on((`invoiceline`.`InvoiceId` = `invoice`.`InvoiceId`))) group by `invoiceline`.`Quantity`,`invoiceline`.`UnitPrice`,`track`.`Name`,`invoice`.`InvoiceDate` order by `invoiceline`.`Quantity` desc */;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
@@ -585,7 +555,7 @@ DELIMITER ;
 /*!50001 SET character_set_results     = utf8 */;
 /*!50001 SET collation_connection      = utf8_general_ci */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
-/*!50013 DEFINER=`Tom`@`%` SQL SECURITY DEFINER */
+
 /*!50001 VIEW `vw_artist_sales` AS select `artist`.`Name` AS `Artist_Group`,sum(`invoiceline`.`UnitPrice`) AS `Total Sales` from ((((`invoice` join `invoiceline` on((`invoiceline`.`InvoiceId` = `invoice`.`InvoiceId`))) join `track` on((`invoiceline`.`TrackId` = `track`.`TrackId`))) join `album` on((`track`.`AlbumId` = `album`.`AlbumId`))) join `artist` on((`album`.`ArtistId` = `artist`.`ArtistId`))) group by `artist`.`Name` order by `Total Sales` desc limit 25 */;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
@@ -603,7 +573,7 @@ DELIMITER ;
 /*!50001 SET character_set_results     = utf8 */;
 /*!50001 SET collation_connection      = utf8_general_ci */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
-/*!50013 DEFINER=`Tom`@`%` SQL SECURITY DEFINER */
+
 /*!50001 VIEW `vw_artist_track_sales` AS select `artist`.`Name` AS `Name`,`track`.`Name` AS `TrackName`,sum(`invoiceline`.`Quantity`) AS `Units Sold` from (((`artist` join `album` on((`album`.`ArtistId` = `artist`.`ArtistId`))) join `track` on((`track`.`AlbumId` = `album`.`AlbumId`))) join `invoiceline` on((`invoiceline`.`TrackId` = `track`.`TrackId`))) group by `artist`.`Name`,`track`.`Name` order by `Units Sold` desc */;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
@@ -621,7 +591,7 @@ DELIMITER ;
 /*!50001 SET character_set_results     = utf8 */;
 /*!50001 SET collation_connection      = utf8_general_ci */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
-/*!50013 DEFINER=`Tom`@`%` SQL SECURITY DEFINER */
+
 /*!50001 VIEW `vw_artist_unit_sales` AS select `artist`.`Name` AS `Artist`,sum(`invoiceline`.`Quantity`) AS `Unit Sales` from ((((`invoice` join `invoiceline` on((`invoiceline`.`InvoiceId` = `invoice`.`InvoiceId`))) join `track` on((`invoiceline`.`TrackId` = `track`.`TrackId`))) join `album` on((`track`.`AlbumId` = `album`.`AlbumId`))) join `artist` on((`album`.`ArtistId` = `artist`.`ArtistId`))) group by `artist`.`Name` order by `artist`.`Name` */;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
@@ -639,7 +609,7 @@ DELIMITER ;
 /*!50001 SET character_set_results     = utf8 */;
 /*!50001 SET collation_connection      = utf8_general_ci */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
-/*!50013 DEFINER=`Tom`@`%` SQL SECURITY DEFINER */
+
 /*!50001 VIEW `vw_customer_count` AS select count(`customer`.`CustomerId`) AS `Customer_Count` from `customer` */;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
@@ -657,7 +627,7 @@ DELIMITER ;
 /*!50001 SET character_set_results     = utf8 */;
 /*!50001 SET collation_connection      = utf8_general_ci */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
-/*!50013 DEFINER=`Tom`@`%` SQL SECURITY DEFINER */
+
 /*!50001 VIEW `vw_genre_count` AS select `genre`.`Name` AS `Genre`,count(`genre`.`Name`) AS `Count` from (`genre` join `track` on((`track`.`GenreId` = `genre`.`GenreId`))) group by `genre`.`Name` */;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
@@ -675,7 +645,7 @@ DELIMITER ;
 /*!50001 SET character_set_results     = utf8 */;
 /*!50001 SET collation_connection      = utf8_general_ci */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
-/*!50013 DEFINER=`Tom`@`%` SQL SECURITY DEFINER */
+
 /*!50001 VIEW `vw_genre_count_no_sales` AS select `genre`.`Name` AS `Genre`,count(`genre`.`Name`) AS `Count` from ((`genre` join `track` on((`track`.`GenreId` = `genre`.`GenreId`))) left join `invoiceline` on((`invoiceline`.`TrackId` = `track`.`TrackId`))) where (`invoiceline`.`InvoiceLineId` is null) group by `genre`.`Name`,`invoiceline`.`InvoiceLineId` */;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
@@ -693,7 +663,7 @@ DELIMITER ;
 /*!50001 SET character_set_results     = utf8 */;
 /*!50001 SET collation_connection      = utf8_general_ci */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
-/*!50013 DEFINER=`Tom`@`%` SQL SECURITY DEFINER */
+
 /*!50001 VIEW `vw_genresales` AS select `genre`.`Name` AS `Name`,sum(`invoiceline`.`Quantity`) AS `Units Sold`,date_format(`invoice`.`InvoiceDate`,'%Y %m 01') AS `SaleMonth` from (((`genre` join `track` on((`track`.`GenreId` = `genre`.`GenreId`))) join `invoiceline` on((`invoiceline`.`TrackId` = `track`.`TrackId`))) join `invoice` on((`invoiceline`.`InvoiceId` = `invoice`.`InvoiceId`))) group by `genre`.`Name`,`SaleMonth` order by `SaleMonth` */;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
@@ -711,7 +681,7 @@ DELIMITER ;
 /*!50001 SET character_set_results     = utf8 */;
 /*!50001 SET collation_connection      = utf8_general_ci */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
-/*!50013 DEFINER=`Tom`@`%` SQL SECURITY DEFINER */
+
 /*!50001 VIEW `vw_largest_customer_sales` AS select sum(`invoice`.`Total`) AS `TotalSales` from `invoice` group by `invoice`.`CustomerId` order by `TotalSales` desc limit 1 */;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
@@ -729,7 +699,7 @@ DELIMITER ;
 /*!50001 SET character_set_results     = utf8 */;
 /*!50001 SET collation_connection      = utf8_general_ci */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
-/*!50013 DEFINER=`Tom`@`%` SQL SECURITY DEFINER */
+
 /*!50001 VIEW `vw_sales_by_month` AS select (`invoice`.`InvoiceDate` - interval (dayofmonth(`invoice`.`InvoiceDate`) - 1) day) AS `SaleMonth`,sum(`invoice`.`Total`) AS `Sum_Total` from ((`invoiceline` join `track` on((`invoiceline`.`TrackId` = `track`.`TrackId`))) join `invoice` on((`invoiceline`.`InvoiceId` = `invoice`.`InvoiceId`))) group by (`invoice`.`InvoiceDate` - interval (dayofmonth(`invoice`.`InvoiceDate`) - 1) day) order by `SaleMonth` */;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
@@ -744,4 +714,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-11-12  6:06:44
+-- Dump completed on 2019-12-29 12:19:24
