@@ -2,7 +2,7 @@ CREATE DATABASE  IF NOT EXISTS `backuppractice` /*!40100 DEFAULT CHARACTER SET u
 USE `BackupPractice`;
 -- MySQL dump 10.13  Distrib 5.7.12, for Win32 (AMD64)
 --
--- Host: 192.168.0.3    Database: BackupPractice
+-- Host: 192.168.0.3    Database: backuppractice
 -- ------------------------------------------------------
 -- Server version	8.0.17
 
